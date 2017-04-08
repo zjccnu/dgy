@@ -19,7 +19,7 @@
 				<td style="font-family: '宋体';font-weight: 800;border-bottom: 1px solid gainsboro;height: 50px;font-size: 21px;text-align: left;">
 					审批
 				</td>
-				<td  style="font-family: '黑体';border-bottom: 1px solid gainsboro;height: 50px;font-size: 16px;text-align: right;">
+				<td  style="font-family: '黑体';border-bottom: 1px solid gainsboro;height: 50px;font-size: 16px;text-align: right;" @click="prepareApproval()">
 					<img src="../assets/common/images/add.png" style="height: 20px;"/><font color="#ff0066">发起审批</font>
 				</td>
 			</tr>
@@ -186,6 +186,9 @@ import nav from '@/components/tabbar'
 		methods:{
            approvalDetail:function(){
            	this.$router.push("leave")
+           },
+           prepareApproval:function(){
+           	this.$router.push("prepareApproval")
            }
 		},
 		components:{

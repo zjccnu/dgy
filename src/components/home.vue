@@ -57,7 +57,7 @@ import routers from '../router'
        },
        //加入企业
        Enterprise:function(){
-
+          this.$router.push("joinEnterprice");
        },
        //添加企业
        addEnterprice:function(){

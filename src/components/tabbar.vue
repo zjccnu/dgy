@@ -4,7 +4,7 @@
 				<span class="mui-icon mui-icon-home"></span>
 				<span class="mui-tab-label">{{s.custom}}</span>
 			</router-link>
-			<router-link class="mui-tab-item" to="/approval">
+			<router-link class="mui-tab-item" to="/workOrder">
 				<span class="mui-icon mui-icon-email"><span class="mui-badge">1</span></span>
 				<span class="mui-tab-label">{{s.goods}}</span>
 			</router-link>
@@ -20,6 +20,7 @@
 </template>
 <script>
 	 export default{
+	 	name:'nav',
 	 	data(){
 	 		return {
 	 			s:{

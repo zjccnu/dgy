@@ -75,13 +75,27 @@
 			</tr>
 			
 			<tr>
-				<td colspan="9" style="height: 60px;text-align: center;" valign="top">
-					<font color="white" style="font-size: 18px;font-weight: 600;"><input type="button" value="完      成" style="opacity:0.4;border:none;width: 95%;height: 80%; background-color: red;"/></font>
+				<td colspan="9" style="height: 60px;text-align: center;" valign="top" @click="next()">
+					<font color="white" style="font-size: 18px;font-weight: 600;"><input type="button" value="下一步" style="opacity:0.4;border:none;width: 95%;height: 80%; background-color: red;"/></font>
 				</td>
 			</tr>	
 </table>
 </template>
 <script>	
+    export default({
+    	data(){
+    		s:{}
+    	},
+    	methods:{
+    		next:function(){
+    			this.$router.push("addEp2");
+    		}
+    	}
+    })
 </script>
+<style src="../assets/common/styles/mui.min.css"></style>
+<style src="../assets/common/styles/app.css"></style>
+<style src="../assets/common/styles/mui.picker.css"></style>
+<style src="../assets/common/styles/mui.poppicker.css"></style>
 <style>	
 </style>
